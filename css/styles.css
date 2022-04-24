@@ -113,10 +113,10 @@ body {
 h1,
 h2,
 h3,
-.features span,
+h4,
+.features a,
 figcaption {
   font-family: "Fraunces", serif;
-  line-height: 1.3;
 }
 
 figcaption span {
@@ -167,11 +167,9 @@ h1.hero-heading {
 
 main {
   width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
 }
+
+/* --Features-- */
 
 .desktop-feature-image,
 .desktop-gallery-image {
@@ -214,6 +212,7 @@ h2 {
   font-weight: 900;
   width: 80%;
   text-align: center;
+  line-height: 1.3;
 }
 
 .feature-text-wrapper p {
@@ -221,11 +220,41 @@ h2 {
   margin: 40px 0;
 }
 
-.feature-text-wrapper span {
+.feature-text-wrapper a {
   text-transform: uppercase;
   color: hsl(212, 27%, 19%);
   font-size: 0.9em;
   font-weight: 900;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+a.learn-more.transform::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  right: -5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: hsl(51, 100%, 49%);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+a.learn-more.stand-out::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  right: -5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: hsl(7, 99%, 70%);
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .feature-wrapper.graphic-design,
@@ -256,11 +285,16 @@ h2 {
   font-weight: 900;
   display: flex;
   margin: 0;
+  line-height: 1.3;
 }
 
 .feature-wrapper p {
-  font-size: 0.9em;
   margin: 30px 0 60px 0;
+}
+
+.feature-wrapper.graphic-design p,
+.feature-wrapper.photography p {
+  font-size: 0.9em;
 }
 
 .feature-wrapper.graphic-design h3,
@@ -280,12 +314,121 @@ h2 {
   height: 600px;
 }
 
+/* --End Features-- */
+
+/* --Testimonials-- */
+
+.testimonials {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 65px 0 90px 0;
+}
+
+.testimonials-wrapper {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 65px;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+  font-size: 0.85em;
+  font-weight: 900;
+  letter-spacing: 0.35em;
+  margin: 0;
+}
+
+.testimonials img {
+  width: 72px;
+  border-radius: 50%;
+}
+
+blockquote {
+  width: 100%;
+  margin: 35px 0;
+  line-height: 1.85;
+}
+
+figcaption {
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+}
+
+figcaption span {
+  font-size: 0.85em;
+  color: hsl(210, 4%, 67%);
+}
+
+/* --End Testimonials-- */
+
+/* --Image Gallery-- */
+
+.image-gallery-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-gallery-image {
+  width: 50%;
+}
+
+/* --Image Gallery End-- */
+
 /*-- Footer --*/
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #90d4c5;
+  color: hsl(168, 34%, 41%);
+  padding: 60px 0 80px 0;
+}
+
+.footer-nav {
+  width: 75%;
+}
+
+.footer-nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 45px 0 80px 0;
+}
+
+.social-media-list {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  width: 100%;
+  padding-top: 80px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #2d7665;
 }
