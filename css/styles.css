@@ -590,6 +590,10 @@ footer {
   .social-media-list {
     width: 30%;
   }
+
+  .attribution {
+    padding-top: 40px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -648,5 +652,24 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin: 110px 0 20px 0;
+  }
+
+  .testimonials-wrapper {
+    width: 28%;
+    padding: 80px 20px 0 20px;
+  }
+
+  .footer-nav {
+    width: 22%;
+  }
+
+  .footer-nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 45px 0 80px 0;
+  }
+
+  .social-media-list {
+    width: 12%;
   }
 }
