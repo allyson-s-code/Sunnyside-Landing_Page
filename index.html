@@ -30,7 +30,11 @@
     <header>
       <div class="nav-bar-wrapper">
         <img src="images/logo.svg" alt="Sunnyside logo" />
-        <img src="images/icon-hamburger.svg" alt="hamburger menu icon" />
+        <img
+          src="images/icon-hamburger.svg"
+          alt="hamburger menu icon"
+          class="hamburger-menu"
+        />
         <nav>
           <ul class="nav-bar">
             <li class="nav-item">About</li>
@@ -50,46 +54,57 @@
 
     <main>
       <section class="features">
-        <div class="feature-wrapper">
-          <img
-            src="images/mobile/image-transform.jpg"
-            class="mobile-feature-image"
-            alt="egg"
-          />
-          <img
-            src="images/desktop/image-transform.jpg"
-            class="desktop-feature-image"
-            alt="egg"
-          />
-          <div class="feature-text-wrapper">
-            <h2>Transform your brand</h2>
-            <p>
-              We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
-            </p>
-            <a href="#" class="learn-more transform">Learn More</a>
+        <div class="feature-wrapper transform">
+          <div class="image-wrapper">
+            <img
+              src="images/mobile/image-transform.jpg"
+              class="mobile-feature-image"
+              alt="egg on bright yellow background"
+            />
+            <img
+              src="images/desktop/image-transform.jpg"
+              class="desktop-feature-image"
+              alt="egg on bright yellow background"
+            />
+          </div>
+
+          <div class="feature-text-container">
+            <div class="feature-text-wrapper">
+              <h2>Transform your brand</h2>
+              <p>
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <a href="#" class="learn-more transform">Learn More</a>
+            </div>
           </div>
         </div>
+
         <div class="feature-wrapper">
-          <img
-            src="images/mobile/image-stand-out.jpg"
-            class="mobile-feature-image"
-            alt="stemmed vessel"
-          />
-          <img
-            src="images/desktop/image-stand-out.jpg"
-            class="desktop-feature-image"
-            alt="stemmed vessel"
-          />
-          <div class="feature-text-wrapper">
-            <h2>Stand out to the right audience</h2>
-            <p>
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
-            </p>
-            <a href="#" class="learn-more stand-out">Learn More</a>
+          <div class="image-wrapper">
+            <img
+              src="images/mobile/image-stand-out.jpg"
+              class="mobile-feature-image"
+              alt="stemmed vessel"
+            />
+            <img
+              src="images/desktop/image-stand-out.jpg"
+              class="desktop-feature-image"
+              alt="stemmed vessel"
+            />
+          </div>
+
+          <div class="feature-text-container">
+            <div class="feature-text-wrapper">
+              <h2>Stand out to the right audience</h2>
+              <p>
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <a href="#" class="learn-more stand-out">Learn More</a>
+            </div>
           </div>
         </div>
         <div class="feature-wrapper graphic-design">
@@ -152,47 +167,58 @@
         </figure>
       </section>
 
-      <div class="image-gallery-wrapper">
-        <img
-          src="images/mobile/image-gallery-milkbottles.jpg"
-          class="mobile-gallery-image"
-          alt="milk bottles with blue sky"
-        />
-        <img
-          src="images/desktop/image-gallery-milkbottles.jpg"
-          class="desktop-gallery-image"
-          alt="milk bottles with blue sky"
-        />
-        <img
-          src="images/mobile/image-gallery-orange.jpg"
-          class="mobile-gallery-image"
-          alt="orange slice on plate with bright orange background"
-        />
-        <img
-          src="images/desktop/image-gallery-orange.jpg"
-          class="desktop-gallery-image"
-          alt="orange slice on plate with bright orange background"
-        />
-        <img
-          src="images/mobile/image-gallery-cone.jpg"
-          class="mobile-gallery-image"
-          alt="ice cream cone with sky blue background"
-        />
-        <img
-          src="images/desktop/image-gallery-cone.jpg"
-          class="desktop-gallery-image"
-          alt="ice cream cone with sky blue background"
-        />
-        <img
-          src="images/mobile/image-gallery-sugar-cubes.jpg"
-          class="mobile-gallery-image"
-          alt="sugar cubes stacked like blocks with pink background"
-        />
-        <img
-          src="images/desktop/image-gallery-sugarcubes.jpg"
-          class="desktop-gallery-image"
-          alt="sugar cubes stacked like blocks with pink background"
-        />
+      <div class="image-gallery-container">
+        <div class="image-gallery-wrapper">
+          <img
+            src="images/mobile/image-gallery-milkbottles.jpg"
+            class="mobile-gallery-image"
+            alt="milk bottles with blue sky"
+          />
+          <img
+            src="images/desktop/image-gallery-milkbottles.jpg"
+            class="desktop-gallery-image"
+            alt="milk bottles with blue sky"
+          />
+        </div>
+
+        <div class="image-gallery-wrapper">
+          <img
+            src="images/mobile/image-gallery-orange.jpg"
+            class="mobile-gallery-image"
+            alt="orange slice on plate with bright orange background"
+          />
+          <img
+            src="images/desktop/image-gallery-orange.jpg"
+            class="desktop-gallery-image"
+            alt="orange slice on plate with bright orange background"
+          />
+        </div>
+
+        <div class="image-gallery-wrapper">
+          <img
+            src="images/mobile/image-gallery-cone.jpg"
+            class="mobile-gallery-image"
+            alt="ice cream cone with sky blue background"
+          />
+          <img
+            src="images/desktop/image-gallery-cone.jpg"
+            class="desktop-gallery-image"
+            alt="ice cream cone with sky blue background"
+          />
+        </div>
+
+        <div class="image-gallery-wrapper">
+          <img
+            src="images/mobile/image-gallery-sugar-cubes.jpg"
+            class="mobile-gallery-image"
+            alt="sugar cubes stacked like blocks with pink background"
+          />
+          <img
+            src="images/desktop/image-gallery-sugarcubes.jpg"
+            class="desktop-gallery-image"
+            alt="sugar cubes stacked like blocks with pink background"
+          />
+        </div>
       </div>
     </main>
 
