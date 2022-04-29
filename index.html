@@ -27,22 +27,35 @@
   </head>
 
   <body>
+    <a name="top"></a>
     <header>
       <div class="nav-bar-wrapper">
         <div class="logo-wrapper">
           <img src="images/logo.svg" alt="Sunnyside logo" class="logo" />
         </div>
-        <img
-          src="images/icon-hamburger.svg"
+
+        <svg
+          width="24"
+          height="18"
+          xmlns="http://www.w3.org/2000/svg"
           alt="hamburger menu icon"
           class="hamburger-menu"
-        />
+        >
+          <path
+            d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+            fill="#FFF"
+            fill-rule="evenodd"
+          />
+        </svg>
+
         <nav>
           <ul class="nav-bar">
-            <li class="nav-item">About</li>
-            <li class="nav-item">Services</li>
-            <li class="nav-item">Projects</li>
-            <li class="nav-item contact">Contact</li>
+            <li class="nav-item"><a href="#" target="_blank">About</a></li>
+            <li class="nav-item"><a href="#" target="_blank">Services</a></li>
+            <li class="nav-item"><a href="#" target="_blank">Projects</a></li>
+            <li class="nav-item contact">
+              <a href="#" target="_blank">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -227,15 +240,16 @@
     </main>
 
     <footer>
-      <svg
-        id="green-logo"
-        width="185"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 124 24"
-      >
-        <title id="sunnyside-logo-green">Sunnyside</title>
-        <path
-          d="M5.857 18.708c1.638 0 2.995-.36 4.07-1.08 1.075-.721
+      <a href="#top">
+        <svg
+          id="green-logo"
+          width="185"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 124 24"
+        >
+          <title id="sunnyside-logo-green">Sunnyside</title>
+          <path
+            d="M5.857 18.708c1.638 0 2.995-.36 4.07-1.08 1.075-.721
         1.613-1.769
         1.613-3.144-.083-1.855-1.464-3.246-4.144-4.173l-1.44-.597c-.314-.1-.538-.198-.67-.298a.45.45
         0 01-.198-.373c0-.414.273-.62.819-.62.678 0 1.182.347 1.513
@@ -285,16 +299,17 @@
         1.925zm2.208-8.149h-5.112c.033-.613.298-1.08.794-1.404.496-.323
         1.084-.484 1.762-.484.678 0 1.266.165 1.762.497.497.331.761.795.794
         1.391z"
-          fill="#287160"
-          fill-rule="nonzero"
-        />
-      </svg>
+            fill="#287160"
+            fill-rule="nonzero"
+          />
+        </svg>
+      </a>
 
       <div class="footer-nav">
         <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
+          <li><a href="#" target="_blank">About</a></li>
+          <li><a href="#" target="_blank">Services</a></li>
+          <li><a href="#" target="_blank">Projects</a></li>
         </ul>
       </div>
       <ul class="social-media-list">

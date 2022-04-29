@@ -110,6 +110,12 @@ body {
   text-align: center;
 }
 
+.features a,
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -254,9 +260,12 @@ a.learn-more.transform::after {
   right: -5px;
   height: 10px;
   border-radius: 10px;
-  background-color: hsl(51, 100%, 49%);
-  opacity: 0.3;
+  background-color: hsl(51, 100%, 49%, 0.3);
   z-index: -1;
+}
+
+a.learn-more.transform:hover::after {
+  background-color: hsl(51, 100%, 49%);
 }
 
 a.learn-more.stand-out::after {
@@ -267,9 +276,12 @@ a.learn-more.stand-out::after {
   right: -5px;
   height: 10px;
   border-radius: 10px;
-  background-color: hsl(7, 99%, 70%);
-  opacity: 0.3;
+  background-color: hsl(7, 99%, 70%, 0.3);
   z-index: -1;
+}
+
+a.learn-more.stand-out:hover::after {
+  background-color: hsl(7, 99%, 70%);
 }
 
 .feature-wrapper.graphic-design,
@@ -439,6 +451,14 @@ footer {
   margin: 45px 0 80px 0;
 }
 
+.footer-nav a {
+  color: hsl(168, 34%, 41%);
+}
+
+.footer-nav a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
 .social-media-list {
   width: 40%;
   list-style: none;
@@ -458,6 +478,8 @@ footer {
 .attribution a {
   color: #2d7665;
 }
+
+/* --Tablet Styles-- */
 
 @media only screen and (min-width: 750px) {
   header {
@@ -539,6 +561,10 @@ footer {
     height: 600px;
   }
 
+  .services-text-wrapper {
+    width: 80%;
+  }
+
   .testimonials {
     width: 100%;
     display: flex;
@@ -609,11 +635,11 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  body {
-    max-width: 1440px;
-  }
+/* --End Tablet Styles-- */
 
+/* --Desktop Styles-- */
+
+@media only screen and (min-width: 1200px) {
   .nav-bar-wrapper {
     width: 92%;
     display: flex;
@@ -626,7 +652,7 @@ footer {
     width: 13%;
   }
 
-  .logo {
+  .logo-wrapper .logo {
     width: 100%;
   }
 
@@ -653,12 +679,12 @@ footer {
     margin: 0;
   }
 
-  .nav-item {
+  .nav-item a {
     color: hsl(0, 0%, 100%);
     font-weight: 400;
   }
 
-  .nav-item.contact {
+  .nav-item.contact a {
     font-family: "Fraunces", serif;
     color: hsl(212, 27%, 19%);
     background: hsl(0, 0%, 100%);
@@ -666,6 +692,11 @@ footer {
     border-radius: 2em;
     text-transform: uppercase;
     font-size: 0.85em;
+  }
+
+  .nav-item.contact a:hover {
+    background: hsl(0, 0%, 100%, 0.3);
+    color: hsl(0, 0%, 100%);
   }
 
   h1.hero-heading {
@@ -755,3 +786,5 @@ footer {
     width: 12%;
   }
 }
+
+/* --End Desktop Styles-- */
