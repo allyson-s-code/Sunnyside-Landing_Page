@@ -110,7 +110,6 @@ body {
   text-align: center;
 }
 
-.features a,
 a {
   cursor: pointer;
   text-decoration: none;
@@ -144,16 +143,83 @@ header {
   padding-top: 33px;
 }
 
-nav {
-  display: none;
-}
-
 .nav-bar-wrapper {
   width: 85%;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  position: relative;
 }
+
+/* ---Mobile Menu--- */
+
+.hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburger-menu:hover {
+  filter: opacity(0.5);
+}
+
+.hamburger-menu:focus {
+  filter: opacity(0.5);
+}
+
+nav {
+  width: 100%;
+  max-width: 340px;
+  height: 300px;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  display: none;
+  z-index: 1;
+  top: 85px;
+}
+
+nav::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -28px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid hsl(0, 0%, 100%);
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item a {
+  color: hsl(232, 10%, 55%);
+  display: flex;
+}
+
+.nav-item.contact a {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  background: hsl(51, 100%, 49%);
+  padding: 1em 2em;
+  border-radius: 2em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+/* ---End Mobile Menu--- */
+
+/* ---Hero--- */
 
 h1.hero-heading {
   color: hsl(0, 0%, 100%);
@@ -174,6 +240,8 @@ h1.hero-heading {
 main {
   width: 100%;
 }
+
+/* ---End Hero--- */
 
 /* --Features-- */
 
@@ -266,6 +334,7 @@ a.learn-more.transform::after {
 
 a.learn-more.transform:hover::after {
   background-color: hsl(51, 100%, 49%);
+  transition: 0.5s;
 }
 
 a.learn-more.stand-out::after {
@@ -282,6 +351,7 @@ a.learn-more.stand-out::after {
 
 a.learn-more.stand-out:hover::after {
   background-color: hsl(7, 99%, 70%);
+  transition: 0.5s;
 }
 
 .feature-wrapper.graphic-design,
@@ -441,6 +511,11 @@ footer {
   width: 75%;
 }
 
+footer a:hover svg {
+  fill: hsl(0, 0%, 100%);
+  transition: 0.5s;
+}
+
 .footer-nav ul {
   list-style: none;
   width: 100%;
@@ -457,6 +532,7 @@ footer {
 
 .footer-nav a:hover {
   color: hsl(0, 0%, 100%);
+  transition: 0.5s;
 }
 
 .social-media-list {
@@ -467,6 +543,11 @@ footer {
   justify-content: space-between;
   padding: 0;
   margin: 0;
+}
+
+.social-media-list img:hover {
+  filter: brightness(0) invert(100%);
+  transition: 0.5s;
 }
 
 .attribution {
@@ -482,6 +563,8 @@ footer {
 /* --Tablet Styles-- */
 
 @media only screen and (min-width: 750px) {
+  /* ---Header--- */
+
   header {
     background-image: url("/images/desktop/image-header.jpg");
     background-color: #3dbeff;
@@ -491,6 +574,8 @@ footer {
     background-position: center;
     padding-top: 40px;
   }
+
+  /* ---Features--- */
 
   .features {
     display: flex;
@@ -565,6 +650,10 @@ footer {
     width: 80%;
   }
 
+  /* ---End Features--- */
+
+  /* ---Testimonials--- */
+
   .testimonials {
     width: 100%;
     display: flex;
@@ -596,6 +685,10 @@ footer {
     margin: 65px 0;
   }
 
+  /* ---End Testimonials--- */
+
+  /* ---Image Gallery--- */
+
   .image-gallery-wrapper {
     width: 100%;
     display: flex;
@@ -611,6 +704,8 @@ footer {
   .desktop-gallery-image {
     width: 100%;
   }
+
+  /* ---Footer--- */
 
   footer {
     padding: 70px 0 80px 0;
@@ -640,12 +735,15 @@ footer {
 /* --Desktop Styles-- */
 
 @media only screen and (min-width: 1200px) {
+  /* ---Header--- */
+
   .nav-bar-wrapper {
     width: 92%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    position: static;
   }
 
   .logo-wrapper {
@@ -656,12 +754,22 @@ footer {
     width: 100%;
   }
 
+  /* ---Navigation--- */
+
+  /* ---Overriding some of the mobile and tablet styles--- */
+
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    max-width: none;
     width: 36%;
+    height: auto;
+    background-color: transparent;
+    position: static;
+  }
+
+  nav::before {
+    display: none;
   }
 
   .hamburger-menu {
@@ -699,6 +807,8 @@ footer {
     color: hsl(0, 0%, 100%);
   }
 
+  /* ---Hero--- */
+
   h1.hero-heading {
     font-size: 3em;
     align-self: center;
@@ -707,6 +817,8 @@ footer {
     letter-spacing: 0.15em;
     margin: 110px 0 20px 0;
   }
+
+  /* ---Features--- */
 
   .feature-text-wrapper {
     width: 61%;
@@ -738,6 +850,8 @@ footer {
   .services-text-wrapper.photography p {
     font-size: 1em;
   }
+
+  /* ---Testimonials--- */
 
   .testimonials {
     width: 100%;
@@ -771,6 +885,8 @@ footer {
     font-size: 1.05em;
     margin: 60px 0 65px 0;
   }
+
+  /* ---Footer--- */
 
   .footer-nav {
     width: 22%;
