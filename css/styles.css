@@ -134,7 +134,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url("/images/mobile/image-header.jpg");
+  background-image: url("./images/mobile/image-header.jpg");
   background-color: #3dbeff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,7 +374,7 @@ a.learn-more.stand-out:hover::after {
 }
 
 .feature-wrapper.graphic-design {
-  background-image: url(/images/mobile/image-graphic-design.jpg);
+  background-image: url(./images/mobile/image-graphic-design.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -416,7 +416,7 @@ a.learn-more.stand-out:hover::after {
 }
 
 .feature-wrapper.photography {
-  background-image: url(/images/mobile/image-photography.jpg);
+  background-image: url(./images/mobile/image-photography.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -577,7 +577,7 @@ footer a:hover svg {
   /* ---Header--- */
 
   header {
-    background-image: url("/images/desktop/image-header.jpg");
+    background-image: url("./images/desktop/image-header.jpg");
     background-color: #3dbeff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -642,7 +642,7 @@ footer a:hover svg {
   }
 
   .feature-wrapper.graphic-design {
-    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-image: url(./images/desktop/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -650,7 +650,7 @@ footer a:hover svg {
   }
 
   .feature-wrapper.photography {
-    background-image: url(/images/desktop/image-photography.jpg);
+    background-image: url(./images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
