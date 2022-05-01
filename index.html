@@ -34,13 +34,20 @@
           <img src="images/logo.svg" alt="Sunnyside logo" class="logo" />
         </div>
 
-        <button class="toggle-menu">
+        <button
+          aria-label="menu"
+          aria-expanded="false"
+          aria-controls="#nav"
+          class="toggle-menu"
+        >
           <svg
             width="24"
             height="18"
             xmlns="http://www.w3.org/2000/svg"
             alt="hamburger menu icon"
             class="hamburger-menu"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
@@ -50,7 +57,7 @@
           </svg>
         </button>
 
-        <nav id="nav">
+        <nav id="nav" aria-label="primary">
           <ul class="nav-bar">
             <li class="nav-item"><a href="#" target="_blank">About</a></li>
             <li class="nav-item"><a href="#" target="_blank">Services</a></li>
@@ -62,11 +69,7 @@
         </nav>
       </div>
       <h1 class="hero-heading">We are creatives</h1>
-      <img
-        src="images/icon-arrow-down.svg"
-        alt="down arrow icon"
-        class="down-arrow"
-      />
+      <img src="images/icon-arrow-down.svg" alt="" class="down-arrow" />
     </header>
 
     <main>
