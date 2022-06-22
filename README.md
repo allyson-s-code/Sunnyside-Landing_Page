@@ -101,12 +101,6 @@ a.learn-more.stand-out:hover::after {
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
 ### Continued development
 
 I'll be working on JavaScript some more for sure. I definitely feel that getting the html more accesible and organizing and making my CSS more efficient will continue to be a top priority.
@@ -124,4 +118,4 @@ I'll be working on JavaScript some more for sure. I definitely feel that getting
 
 ## Acknowledgments
 
-Thanks to Amon and Grace on Frontend Mentor Slack for helping with my accessibility and with the even propagation tip!
+Thanks to Amon and Grace on Frontend Mentor Slack for helping with my accessibility and with the event propagation tip!
